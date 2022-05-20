@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 3초에 한번씩 새로고침 -->
+		<meta http-equiv="refresh" content = "3;url=http://localhost:8080/web01/sample01.html">
+		<!-- text문서이고 html문서라고 알려주는 기능 // MIME Type =  text css, text javascript, image jepg, pmage png ...-->
+		<meta http-equiv = "content-type" content = "text/html;charset=utf-8"> 
+		<!-- 왼쪽 상단 아이콘 지정 -->
+		<link rel = "icon" type = "image/ico" href = "img/logo.ico">
+		<!-- 배경색 지정 
+		 sample01.css파일에서 body태그는 현재 sample01.html에서 body를 가져오겠다는 것이다. -->
+		<link rel = "stylesheet" type = "text/css" href = "css/sample01.css">
+		<!-- 현재위치가 base에 있는 경로로 지정된거로 body태그에 page가 필요없다. -->
+		<base href = "http://localhost:8080/web01/page/" target = "_self">
+		<title> Hello HTML Document</title>
+		<!-- 글자색 지정 // css파일에 안적고 여기에 적어도 됨--> 
+		<style>
+			body {
+				color: white;
+			}
+		</style>
+	<!-- 
+			문서에 대한 정보를 설명하기 위해 사용하는 영역
+			<title>, <meta>, <link>, <script>, <style>
+	-->
+</head>
+<body>
+	링크만들기
+	<!--  ./는 경로를 의미한다. 앵커 -->
+	<a href = "./sample03.html"> 페이지 3으로 이동! </a>
+	<a href = "./sample02.html"> 페이지 2로 이동! </a>
+	<!-- 
+		브라우저 화면에 출력하여 보여 줄 태그 정보를 작성하는 영역
+		<h1>, <p>, .... 등 다양한 태그들이 사용된다. (head)태그에서 사용하는 태그를 제외한 모든 태그)
+	 -->
+	 안녕하세요!
+</body>
+</html>
