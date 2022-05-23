@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 기본 HTML 태그 </title>
+</head>
+<body>
+	<h1 id="h_tag"> 제목 태그 1</h1>
+	<h2> 제목 태그 1</h2>
+	<h3> 제목 태그 1</h3>
+	<h4> 제목 태그 1</h4>
+	<h5> 제목 태그 1</h5>
+	<h6> 제목 태그 1</h6>
+	
+	<!--  수평 줄을 긋기 위해 사용 -->
+	<hr>
+	
+	글자를 <strong> 강조 </strong> 하기위해 strong 태그를 사용 <br>
+	글자를 <b>강조</b> 하기위해 b태그를 사용 <br>
+	strong 태그는 검색엔진 또는 봇에 의해 강조된 문자을 찾을 때 즉, 강조라는 의미가 가미된 문장을 찾기 위해 사용<br>
+	b태그는 아무런 의미 없이 글자의 굵기를 두껍게 만들어준다.
+	태그에 의미가 부여가 되는 형태의 태그를 시멘틱 태그라고 한다. 
+	<hr>
+	글자에 형광펜으로 <mark> 하이라이팅을 </mark> 주기위해 mark 태그를 사용 <br>
+	글자에 <b><mark>하이라이팅과 두께를 </mark></b> 조정할 수 있다. <br>
+	<hr>
+	<s>취소선</s>과 <u>밑줄</u>을 긋기 위한 s, u 태그<br>
+	<hr>
+	글자에 <em>기울임</em>을 <i>적용</i>하기 위한 em(시멘틱), i 태그<br>
+	<hr>
+	글자의 크기를 <small>작게</small> 표시하여 부가 정보를 표현하기 위한 small 태그<br>
+	<hr>
+	다른 사이트 또는 책의 문구를 인용한 경우 사용하는 blockquote(block태그), q 태그<br>
+	태그 사용 전 <blockquote>안녕하세요. (자동 들여쓰기, inline태그)</blockquote> 태그 사용 후
+	태그 사용 전 <q>안녕하세요.(자동 쌍따옴표)</q> 태그 사용 후
+	<hr>
+	<sup>위</sup>첨자, <sub>아래</sub> 첨자를 적용하기 위한 sup, sub 태그<br>
+	<abbr title="avvreviation"(약어)">abbr</abbr>
+	<hr>
+	인용문에 <cite>출처</cite>를 표기하기 위한 cite태그<br>
+	<hr>
+	<code>컴퓨터 인식을 위한 소스코드를 
+		담기위한 태그</code><br>
+	<!-- pre 시작태그 /pre 종료태그 -->
+	<pre><code>pre태그와 같이 사용하면 코드의 
+		들여쓰기 개행 등이 바로 적용되어 코드 작성이
+	 	용이해진다.</code></pre>
+	<hr>
+	<kbd>키보드</kbd> 입력이나 음성 명령 같은 사용자 입력 내용을 표기하기 위한 kbd태그<br>
+	<hr>
+	<P>문장 작성을 위해 사용하는 p태그 </p>
+	<hr>
+	<a href = "htpp://naver.com">링크</a>를 만들기 위한 a태그
+	문서 내부의 특정 영역에 연결을 할 수 있다. <a href="#h_tagh">제목태그로 이동</a>
+	<hr>
+	<!-- unorder list(-, -, -, ...)), order list(1, 2, 3))안에 li가 들어가야 한다. -->
+	<ul>
+		<li>순서 없는 목록 </li>
+		<li>순서 없는 목록 </li>
+		<li>순서 없는 목록 </li>
+	</ul>
+	<hr>
+	<ul type = "circle">
+		<li>순서 없는 목록 </li>
+		<li>순서 없는 목록 </li>
+		<li>순서 없는 목록 </li>
+	</ul>
+	<hr>
+	<ul type = "square">
+		<li>순서 없는 목록 </li>
+		<li>순서 없는 목록 </li>
+		<li>순서 없는 목록 </li>
+	</ul>
+	<hr>
+	<ol>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+	</ol>
+	<hr>
+	<ol type = "a">
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+	</ol>
+	<hr>
+	<ol type = "i">
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+	</ol>
+	<hr>
+	<ol type = "A" start = "4">
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+	</ol>
+	<hr>
+	<ol type = "I" reversed>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+	</ol>
+	<hr>
+	<ol>
+		<li>순서 있는 목록 </li>
+		<li value="4">순서 있는 목록 </li>
+		<li>순서 있는 목록 </li>
+	</ol>
+	<hr>
+	<ol>
+		<li>중첩된 목록</li>
+		<li>중첩된 목록</li>
+		<ol>
+			<li>중첩된 목록</li>
+			<li>중첩된 목록</li>
+			<ul>
+				<li>중첩된 목록</li>			
+				<li>중첩된 목록</li>			
+			</ul>
+		</ol>
+		<li>중첩된 목록</li>			
+		<li>중첩된 목록</li>
+		<ul>
+			<li>중첩된 목록</li>			
+			<li>중첩된 목록</li>
+			<li>중첩된 목록</li>
+		</ul>		
+	</ol>
+	<hr>
+	<dl>
+		<dt>정의 목록</dt>
+		<dd>사전과 같이 특정 단어에 대한 정의를 설명하기 위한 용도로 사용할 수 있다.</dd>
+		<dt>dl</dt>
+		<dd>Description List의 약자이다.</dd>
+		<dd>정의 목록을 나타내기 위해 사용한다.</dd>
+		<dt>dt</dt>
+		<dd>Description Term의 약자이다.</dd>
+		<dd>정의 대상이 되는 용어, 단어를 작성하기 위해 사용한다.</dd>
+		<dt>dd</dt>
+		<dd>Description Detail의 약자이다</dd>
+		<dd>dt의 상세 내용을 작성하기 위해 사용한다.</dd>
+	</dl>
+	<hr>
+	 <!-- tr은 열, td는 행 : 첫 번째 행의 열의 수가 n으로 정해지면 나머지 행의 열의 수도 첫번째 행의 수와 동일해야 한다.-->
+	 <!-- th는 열의 제목(특정 셀에 제목입력), <caption> : 테이블의 제목 내용추가, <figure/figcaption> caption과 비슷, border 셀의 테두리 두께
+	      , rowspan colspan 행과 열 병합(자신을 포함한..!)  -->
+	<table border="5">
+		<caption>테이블 제목</caption>
+		<tr>
+			<th>제목열1</th>
+			<th>제목열2</th>
+			<th>제목열3</th>
+		</tr>
+		<tr>
+			<td>내용4</td>
+			<td>내용5</td>
+			<td>내용6</td>
+		</tr>
+		<tr>
+			<td>내용7</td>
+			<td>내용8</td>
+			<td>내용9</td>
+		</tr>
+	</table>
+	<figure>
+		<figcaption>테이블 제목(상단)</figcaption>
+		<table border="5">
+			<tr>
+				<th>제목열1</th>
+				<th>제목열2</th>
+				<th>제목열3</th>
+			</tr>
+			<tr>
+				<th>제목행4</th>
+				<td>내용5</td>
+				<td>내용6</td>
+			</tr>
+			<tr>
+				<th>제목행5</th>
+				<td>내용8</td>
+				<td>내용9</td>
+			</tr>
+		</table>
+		<figcaption>테이블 제목(하단)</figcaption>
+	</figure>
+	<hr>
+		<table border="5">
+			<tread>
+			<tr>
+				<th>tread</th>
+				<th>시멘틱태그</th>
+				<th>테이블의 제목행에 해당하는 영역임을 의미</th>
+			</tr>
+			</tread>
+			<tbody>
+			<tr>
+				<th>tbody</th>
+				<td>시멘틱태그</td>
+				<td>테이블의 본문</td>
+			</tr>
+			<tr>
+				<th>내용에</th>
+				<td>해당하는 영역임을</td>
+				<td>의미한다</td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th>tfoot</th>
+				<td>시멘틱태그</td>
+				<td>테이블의 소계 또는 요약에 해당하는 영역임을 의미</td>
+			</tr>
+			</tfoot>
+		</table>
+	<hr>
+	<table border="5">
+		<tr>
+			<th rowspan="3">제목열1</th>
+			<th colspan="2">제목열2</th>
+		</tr>
+		<tr>
+			<td>내용5</td>
+			<td>내용6</td>
+		</tr>
+		<tr>
+			<td>내용8</td>
+			<td>내용9</td>
+		</tr>
+	</table>
+	<hr>
+	
+	
+	
+	
+</body>
+</html>
