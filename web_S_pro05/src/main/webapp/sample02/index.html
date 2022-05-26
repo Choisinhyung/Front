@@ -28,10 +28,13 @@
 			color: blue;
 			font-weight: bold;
 		}
+		/*작동안됨. h2가 두번째이기 때문에*/
 		.ex4 > h2:first-child {
 			color: red;
 		}
+		/*자식 중 동일한 요소에 첫번째*/
 		.ex4 > h2:first-of-type {
+			/*밑줄 긋기*/
 			border-bottom: 2px solid black;
 		}
 		.ex4 > h2:last-child {
@@ -203,5 +206,6 @@
 		<p class="t2">Hello</p>
 		<p class="t3">Hello</p>
 	</div>
+	
 </body>
 </html>
