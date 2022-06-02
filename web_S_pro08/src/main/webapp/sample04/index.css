@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.a {
+	text-align:center;
+	width:330px;
+	height:250px;
+}
+
+.submit {
+	vertical-align: center;
+}
+
+.content_input {
+    position: relative;
+    top:-70px;
+    right:8px;
+}
+
+.title_input {
+    position: relative;
+    right:8px;
+}
+
+.file {
+	position: relative;
+	right:12px
+}
+
+table {
+    width: 100%;
+  }
+
+th{
+	background-color:#FFE4E1;
+}
+
+td{
+	background-color:#F5FFFA;
+}
+
+.link {
+	width:70px;
+	background-color:#B0C4DE;
+	color: black;
+}
+
+.link a {
+	text-decoration:none
+}
+
+:link {
+	color: black;
+}
+
+:visted {
+	color: #551A8B;
+}
+

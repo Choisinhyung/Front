@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>공지사항 작성하기</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<form action = "insert.no" method = "POST">
+		<fieldset>
+			<legend> 공지사항 작성하기 </legend>
+			<div class="a">
+			<div class="title">
+				<label class="title_input"><strong>제목</strong></label>
+				<input type="text" maxlength="30" size="30" name="title" placeholder="제목을 입력하시오." required><br>
+			</div>
+			
+			<div class="content">
+				<label class="content_input"><strong>내용</strong></label>
+				<textarea cols="32" rows="10" name="content" placeholder="내용을 입력하시오." required></textarea><br>
+			</div>
+			
+			<div class="file">
+				<label class="file_input"><strong>첨부파일</strong></label>
+				<input type="file" name="uploadFile" multiple><br><br>
+			</div>
+			<div class="submit">
+				<button type="submit">작성하기</button>
+			</div>
+			</div>
+		</fieldset>
+		<br><hr><br>
+		
+		<table border="1">
+			<tr>
+				<th><strong>번호</strong></th>
+				<th colspan="2"><strong>제목</strong></th>
+				<th ><strong>작성자</strong></th>
+				<th><strong>작성일</strong></th>
+				<th><strong>조회수</strong></th>
+			</tr>
+			
+			<tr>
+				<td>9</td>
+				<td>공지사항 제목 9</td>
+				<td class="link"><a href="#">바로가기</a></td>
+				<td>user01</td>
+				<td>2021-03-29</td>
+				<td>34</td>
+			</tr>
+			
+			<tr>
+				<td>6</td>
+				<td>공지사항 제목 6</td>
+				<td class="link"><a href="#">바로가기</a></td>
+				<td>answ445</td>
+				<td>2021-03-12</td>
+				<td>67</td>
+			</tr>
+			
+			<tr>
+				<td>3</td>
+				<td>공지사항 제목 3</td>
+				<td class="link"><a href="#">바로가기</a></td>
+				<td>testg12</td>
+				<td>2021-03-01</td>
+				<td>98</td>
+			</tr>
+			
+			<tr>
+				<td>2</td>
+				<td>공지사항 제목 2</td>
+				<td class="link"><a href="#">바로가기</a></td>
+				<td>palwe3</td>
+				<td>2021-01-02</td>
+				<td>85</td>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>공지사항 제목 1</td>
+				<td class="link"><a href="#">바로가기</a></td>
+				<td>xml23</td>
+				<td>2020-12-24</td>
+				<td>124</td>
+			</tr>
+			
+			<tr>
+				<th colspan="4"><strong>전체공지사항 갯수</strong></th>
+				<th colspan="2"><strong>5개</strong></th>
+			</tr>			
+		</table>
+	</form>
+</body>
+</html>

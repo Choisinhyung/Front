@@ -1,58 +1,145 @@
 @charset "UTF-8";
 
-.a {
-	text-align:center;
-	width:330px;
-	height:250px;
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+* {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
 }
 
-.submit {
-	vertical-align: center;
+.container {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	width: 768px;
 }
 
-.content_input {
-    position: relative;
-    top:-70px;
-    right:8px;
+.content-center {
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.title_input {
-    position: relative;
-    right:8px;
+.table-option {
+	display: block;
+	height: 2rem;
 }
 
-.file {
+.table-option .notice-hide {
+	display: inline-block;
+}
+
+.table-option .notice-hide > input[type=checkbox] {
+	display: none;
+}
+
+.table-option .notice-hide > input[type=checkbox] + label {
 	position: relative;
-	right:12px
+	top: 3px;
+	display: inline-block;
+	border: 1px solid gray;
+	width: 1rem; height: 1rem;
 }
 
-table {
-    width: 100%;
-  }
-
-th{
-	background-color:#FFE4E1;
+.table-option .notice-hide > input[type=checkbox]:checked + label {
+	position: relative;
+	top: 7px;
+	display: inline-block;
+	border: 1px solid gray;
+	width: 1rem; height: 1rem;
 }
 
-td{
-	background-color:#F5FFFA;
+.table-option .notice-hide > input[type=checkbox]:checked + label::after {
+	position: relative;
+	top: -3px; left: -1px;
+	font-family: "Material Symbols Outlined";
+	font-size: 1rem;
+	content: "\e876";
 }
 
-.link {
-	width:70px;
-	background-color:#B0C4DE;
+.separator::after {
+	display: inline-block;
+	content: " | ";
+}
+
+.list-type {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.list-type span {
+	display: inline-block;
+}
+
+.list-view-count {
+	display: inline-block;
+}
+
+.list-view-count > input[type=checkbox] {
+	display: none;
+}
+
+.list-view-count .list-view-select {
+
+}
+
+.list-view-count .list-view-select::after {
+}
+
+.list-view-count .list-view-option {
+	padding: 0.6rem;
+}
+
+.paging-list {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+.paging-list .paging-item {
+	display: inline-block;
+	padding: 0.2em 0.5em;
+}
+
+.paging-list a {
+	text-decoration: none;
 	color: black;
 }
 
-.link a {
-	text-decoration:none
+.paging-list a:hover {
+	text-decoration: underline;
 }
 
-:link {
-	color: black;
+.paging-list .active {
+	border: 1px solid black;
 }
 
-:visted {
-	color: #551A8B;
+.paging-list .active a {
+	color: rgb(0, 216, 80);
 }
+
+.paging-list .next-item::after {
+	position: relative;
+	top: 1px;
+	right: 4px;
+	font-family: "Material Symbols Outlined";
+	font-size: 1em;
+	content: "\e5e1";
+}
+
+.paging-list .prev-item::after {
+	font-family: "Material Symbols Outlined";
+	font-size: 1rem;
+	content: "\e5e0";
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+
 
