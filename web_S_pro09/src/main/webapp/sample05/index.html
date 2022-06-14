@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트 - BOM</title>
+	<link rel = "stylesheet" type = "text/css" href = "../static/css/sample05.css">
+	<script type = "text/javascript" src = "../static/js/sample05.js"></script>
+</head>
+<body>
+
+	<form action = "./">
+		<input type = "text" name = "x">
+		<button type = "submit">전송</button>
+	</form>
+
+	개발자모드<br>
+	윈도우 크기 설정<br>
+	var newWindow = window.open("about:blank(윈도우 링크)", "_blank", "width= 500", "height= 500");<br>
+	newWindow.moveTo(0가로축,0세로축) -> 윈도우 창이 0,0위치로 옮겨짐(절대위치))<br>
+	newWindow.resizeTo(500, 500); -> 창크기 조절<br>
+	newWindow.resizeTo(100, 100) -> 창크기 누적(기존창에서 추가로 변경)<br>
+	newWindow.focus(); newWindow.blur(); -> 포커스주고 블러하고~ 창을 띄우고 뒤로보내고 차이<br>
+	newWindow.setTimeout(() => {return alert("hello")}, 3000); -> 일정시간 (3초)뒤에 함수를 실행해라<br>
+	newWindow.setInterval(alert, 3000);<br>
+	newWindow.clearInterval(0); -> 위의 setInterval을 clear<br><br>
+	
+	window.sesizeBy(100,100); -> (chrome)자신의 창은 안댐 새로운 창을 만들어서 조정만 가능<br>
+	var w = window.open("about:blank(윈도우 링크)", "_blank", "width= 500", "height= 500");->새 창 생성<br>
+	w.resizeBy(100,100);<br>
+	w.moveTo(10000,100000);<br><br>
+	
+	screen객체<br>
+	window.screen; -> 사용 가능한 정보를 나타내 줌 (window생략가능 screen만 입력)<br><br>
+	
+	location.replace("https://www.google.com"); -> 주소 재설정 / 뒤로가기 안됨(주소가 바뀐거지 이동한 게 아님)<br>
+	location.assign("https://www.naver.com"); -> 주소 재설정 / 뒤로가기 됨<br>
+	location.reload() -> 다시 불러오기<br><br>
+	
+	navigator -> 브라우저 정보 취득할 때<br>
+	history.go(-4); -> 뒤로가기 몇 번 해라~<br><br>
+	
+	var div1 = document.createElement(); -> element생성<br>
+	div1.innerText = "메인 영역" -> 이런식으로 사용<br>
+	body.appendchild(div1); -> <div>메인 영역</div>  ===== 여러개가 아닌 한 가지만 들어감.<br>
+	     append("문자열") -> 여러개가 추가 됨<br><br>
+	
+	var text1 = document.createTextNode("Text1")<br>
+	var body = document.body;<br><br>
+	
+	var input = document.createElement("input");<br>​
+	body.appendChild(input);<br>​
+	input.setAttribute("placeholder", "텍스트 입력"); // placeholder라는 함수가 있음<br>
+	input.setAttribute("value", "Hello");<br>
+	input.value = "안녕하세요";<br>
+	input.getAttribute("value");<br>
+	input.placeholder;<br>
+</body>
+</html>
