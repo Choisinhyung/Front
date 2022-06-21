@@ -8,15 +8,16 @@
 </head>
 <body>
 	<h1>함수</h1>
-	<button type="button" onclick="console.log(f1());">f1()</button>
-	<button type="button" onclick="console.log(f2());">f2()</button>
-	<button type="button" onclick="console.log(f3());">f3()</button>
-	<button type="button" onclick="console.log(f4());">f4()</button>
+	<!-- onclick(버튼생성)누르면 콘솔에 출력(개발자모드) -->
+	<button type="button" onclick="console.log(f1());">f1()</button> <!-- 문자 리턴 -->
+	<button type="button" onclick="console.log(f2());">f2()</button> <!-- 숫자 리턴 -->
+	<button type="button" onclick="console.log(f3());">f3()</button> <!-- 리턴 없음(undifined) -->
+	<button type="button" onclick="console.log(f4());">f4()</button> <!-- 익명함수 -->
 	<hr>
 	<h2>매개변수를 사용한 함수</h2>
-	<button type="button" onclick="f5();">f5()</button>
+	<button type="button" onclick="f5();">f5()</button> <!-- 스스로 동작함수, 페이지 새로고침하면 바로 생김 -->
 	<button type="button" onclick="f5(10);">f5(10)</button>
-	<button type="button" onclick="f5(10, 20);">f5(10, 20)</button>
+	<button type="button" onclick="f5(10, 20);">f5(10, 20)</button> <!-- 초과 작성된 매개변수의 값은 무시 -->
 	<button type="button" onclick="f5('a');">f5('a')</button>
 	<button type="button" onclick="f5([1, 2, 3]);">f5([1, 2, 3])</button>
 	<hr>
