@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트 - 내장객체</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/sample04.css">
+	<script type="text/javascript" src="../static/js/sample04.js"></script>
+</head>
+<body>
+	<h1>내장객체</h1>
+	<h2>Date</h2>
+	<h3>현재 날짜 생성</h3>
+	<button type="button" onclick="f1();">new Date()</button>
+	<p id="res1"></p>
+	<hr>
+	<h3>날짜 설정</h3>
+	<button type="button" onclick="f2();">2022년 01월 01일로 생성</button>
+	<p id="res2"></p>
+	<hr>
+	<h3>input 태그의 date 타입으로 날짜 설정</h3>
+	<input id="id_input1_date" type="date">
+	<button type="button" onclick="f3();">생성</button>
+	<p id="res3"></p>
+	
+	<!-- 개발자모드 -->
+	<!-- day.getFullYear() : 연도(2022)
+	     day.getHours() : 시
+	     day.getMinutes() : 분
+	     day.getSeconds() : 초
+	     day.getMilliseconds() : 밀리초
+	     day.getTimezoneOffset() : 세계표준시와 한국표준시 차이를 분으로 나타낸 것
+	     day : 한국 표준시 나타냄 
+	     var date = new date(); : 시간
+	     day.getDay('월 일' / '월 일, 년도'/ '월 일, 년도 시간(시:분:초)') : 요일을 숫자값으로 나타냄 0~6 일~토
+	     --------getDay를 사용하여 날짜 설정 후 day입력하여 출력
+	     day.setFullYear(년, 월, 일) : 년도 설정 -->
+</body>
+</html>
